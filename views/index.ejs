@@ -11,16 +11,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Lol Champions</title>
+    <title>LOL CHAMPIONS</title>
   </head>
   <body>
-    <h1>Lol Champions</h1>
+    <h1 class="title">LOL CHAMPIONS</h1>
 
     <div class="container">
-      <div class="row">
+      <div class="row gap-5">
         <% lolChampions.forEach(champion => { %>
-        <a class="col-md-4" href="/champion/<%= champion.id %>">
-          <h2><%= champion.name%></h2>
+        <a class="col-sm-2 champion-avatar" href="/champion/<%= champion.id %>">
+          <img src="<%= champion.icon%>" alt="<%= champion.name  %>" />
         </a>
         <% })%>
       </div>

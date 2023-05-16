@@ -18,13 +18,15 @@
     <div class="card" style="width: 20rem">
       <img src="<%= champion.icon %>" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h2 class="card-title"><%= champion.name %></h2>
-        <h4 class="card-title"><%= champion.title %></h4>
+        <h1 class="card-title"><%= champion.name %></h1>
+        <h2 class="card-title"><%= champion.title %></h2>
         <p class="card-text"><%= champion.description %></p>
-        <h3 class="card-title" style="text-align: center">Tags:</h3>
+        <h2 class="card-title" style="text-align: center; padding-top: 10px">
+          Tags:
+        </h2>
         <div class="d-flex tags">
           <%for(let i=0; i< champion.tags.length; i++) {%>
-          <p class="card-text"><%= champion.tags[i] %></p>
+          <p class="card-text tag"><%= champion.tags[i] %></p>
           <%}%>
         </div>
         <a href="/" class="btn btn-light">Back to home page</a>
